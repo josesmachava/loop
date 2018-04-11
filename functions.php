@@ -121,8 +121,9 @@ add_action( 'widgets_init', 'loop_widgets_init' );
  */
 function loop_scripts() {
 	wp_enqueue_style( 'loop-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'malangatana', get_template_directory_uri() . '/css/main.css', array(), '1.1', 'all');
 
-	wp_enqueue_script( 'loop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'loop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'loop-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

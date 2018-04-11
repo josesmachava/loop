@@ -1,0 +1,71 @@
+@import "malangatana.min.css";
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.post{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    margin-bottom: 50px;
+    padding: 20px;
+    margin: 20px 10px 20px;
+    font-weight: bold;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.post .category{
+    text-transform: uppercase;
+    border: 1px solid #009cf3;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    border-width: auto;
+    background-color:#009cf3;
+}
+.post ul{
+    margin-left: -40px;
+    font-weight: 400;
+}
+.post li{
+    display: inline;
+}
+.entry-content{
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+.entry-meta{
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+span{
+    text-transform: capitalize;
+}
+.readMore{
+    border-bottom: 2px solid #009cf3;
+}
+.title{
+    font-size: 100px;
+    text-align: center;
+
+}
+.entry-title{
+    font-size: 30px;
+    font-weight: 800;
+}
