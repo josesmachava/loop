@@ -8,7 +8,6 @@
  */
 
 ?>
-<div class="wrapper grid">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<footer class="entry-footer">
 		<?php loop_entry_footer(); ?>
@@ -59,4 +58,3 @@
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
-</div>

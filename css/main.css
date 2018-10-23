@@ -5,13 +5,14 @@ body{
 
 }
 .wrapper{
-    width: 80%;
+    width: 90%;
     margin:auto;
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-   
+    grid-column-gap: 20px;
+
 
 }
 article{
@@ -19,7 +20,6 @@ article{
         margin-bottom: 50px;
         padding: 20px;
         font-weight: bold;
-    
     
 }
 .entry-content{
