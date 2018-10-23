@@ -1,31 +1,49 @@
-@import "malangatana.min.css";
+
 body{
     background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
 
 }
-.flexbox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.wrapper{
+    width: 80%;
+    margin:auto;
 }
-.post{
-    background-color: white;
-    height: 350px;
-    width: 300px;
-    margin-bottom: 50px;
-    padding: 20px;
-    margin: 20px 10px 20px;
-    font-weight: bold;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+
 }
-a{
-    color:black;
-    text-decoration: none;
+article{
+        background-color: white;
+        margin-bottom: 50px;
+        padding: 20px;
+        font-weight: bold;
+    
+    
 }
-a:hover{
-    text-decoration: none;
+.entry-content{
+    font-weight: normal;
+ }
+.entry-meta{
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+
 }
-.post .category{
+.entry-title{
+    font-size: 30px;
+    font-weight: 800;
+}
+.author a,.posted-on a,
+.entry-title a,
+.entry-footer a,
+.more-link{
+   text-decoration: none;
+   color:black;
+}
+.entry-footer{
+    
     text-transform: uppercase;
     border: 1px solid #009cf3;
     padding: 5px;
@@ -33,39 +51,19 @@ a:hover{
     display: inline-block;
     font-size: 12px;
     border-width: auto;
-    background-color:#009cf3;
-}
-.post ul{
-    margin-left: -40px;
-    font-weight: 400;
-}
-.post li{
-    display: inline;
-}
-.entry-content{
-    font-weight: 400;
-    line-height: 25px;
-    text-align: left;
-}
-
-.entry-meta{
-    display: inline;
-    font-size: 14px;
-    font-weight: 400;
+    background-color: #009cf3;
 
 }
-span{
-    text-transform: capitalize;
-}
-.readMore{
+.entry-footer a{
+    text-decoration: none;
+    color:white;
+ }
+ .more-link{
+    display:inline-block;
+    font-weight: bold;
+    margin-top: 21px;
     border-bottom: 2px solid #009cf3;
-}
-.title{
-    font-size: 100px;
-    text-align: center;
 
-}
-.entry-title{
-    font-size: 30px;
-    font-weight: 800;
-}
+ }
+
+

@@ -8,8 +8,12 @@
  */
 
 ?>
-
+<div class="wrapper grid">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<footer class="entry-footer">
+		<?php loop_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
+
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -27,6 +31,8 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+
+    
 	</header><!-- .entry-header -->
 
 	<?php loop_post_thumbnail(); ?>
@@ -52,8 +58,5 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php loop_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>
